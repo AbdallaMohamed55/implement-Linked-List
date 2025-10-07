@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;      // To store data
+    Node* next;    // Pointer to the next node
+};
+
+int main() {
+    // Create a single node dynamically
+    Node* head = new Node;
+
+    // Assign values
+    head->data = 10;   // store data
+    head->next = nullptr; // no next node yet
+
+    // Display node data
+    cout << "Data: " << head->data << endl;
+    cout << "Next: " << head->next << endl;  // it should print 0 or NULL
+
+    // Free memory
+    delete head;
+    
+    return 0;
+}
