@@ -34,6 +34,73 @@ The first node is known as the head, and the last node points to NULL, indicatin
 
   * Sequential access (cannot access directly by index)
 
+# Algorithms:
+
+## ALGORITHM TO ADD MULTIPLE NODES AT THE END OF A LINKED LIST
+
+START
+
+Define a structure Node with:
+
+data → to store integer value
+
+next → pointer to the next node
+
+Define a pointer head and set it to NULL (empty list).
+
+Repeat the following steps for each new value to be inserted:
+
+Create a new node using dynamic memory allocation.
+
+Assign the value to newNode->data.
+
+Set newNode->next = NULL.
+
+If head == NULL, set head = newNode.
+
+Otherwise:
+
+Set temp = head.
+
+Traverse the list until temp->next == NULL.
+
+Set temp->next = newNode.
+
+After all insertions, traverse the list from head to NULL and display the data of each node.
+
+Free the allocated memory by deleting all nodes one by one.
+
+STOP
+
+## ALGORITHM TO ADD MULTIPLE NODES AT THE START OF A LINKED LIST
+
+START
+
+Define a structure Node with:
+
+data → to store integer value
+
+next → pointer to the next node.
+
+Initialize the list with head = NULL.
+
+For each new value to be inserted at the start:
+
+Create a new node using dynamic memory allocation.
+
+Assign the value to newNode->data.
+
+Set newNode->next = head.
+
+Update head = newNode (new node becomes the first node).
+
+After all insertions, traverse the list starting from head until NULL, printing the data of each node.
+
+Free the allocated memory by deleting each node one by one.
+
+STOP
+
+
 # Procedure
 
   i/ Start the C++ compiler and open a new file.
