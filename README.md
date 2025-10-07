@@ -15,7 +15,7 @@ A Linked List is a linear data structure in which elements are not stored at con
 
 The first node is known as the head, and the last node points to NULL, indicating the end of the list
 
-##Types of Linked Lists:
+  ## Types of Linked Lists:
 
     1. Singly Linked List: Each node points to the next node only.
 
@@ -23,12 +23,12 @@ The first node is known as the head, and the last node points to NULL, indicatin
 
     3. Circular Linked List: The last node points back to the first node, forming a circular structure.
 
-## Advantages:
+  ## Advantages:
 
    * Dynamic memory allocation (size can change at runtime)
    * insertion and deletion compared to arrays
 
-## Disadvantages:
+  ## Disadvantages:
 
   * Extra memory for pointers
 
